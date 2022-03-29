@@ -8,23 +8,43 @@
 </head>
 <body>
     
-    Miembros Familiares
-    <ul>
-        {% for familiar in ListaFamiliar %}
-            <li>
-                
-                {{familiar}}
-                
-            </li>
-        {% endfor %}
-
-    </ul>
     
-    <li>{{name}}</li>
-    <li>{{apellido}}</li>
-    <li>{{edad}}</li>
-    <li>{{fecha}}</li>
+    <ul>
+        <table border="1">
+            <caption>Miembros Familiares</caption>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>DNI</th>
+                    <th>Fecha de Nacimiento</th>
+                </tr>
+                
+                <tr>
+                    <th>1</th>
+                        {% for dato in uno %}
+                            <td>{{dato}}</td>
+                        {% endfor %}
+                    
+                </tr>
+                <tr>
+                    <th>2</th>
+                        {% for dato in dos %}
+                            <td>{{dato}}</td>
+                        {% endfor %}
+                    
+                </tr>
+                <tr>
+                    <th>3</th>
+                        {% for dato in tres %}
+                            <td>{{dato}}</td>
+                        {% endfor %}
+                    
+                </tr>
 
+            </tbody>
+        </table>
 
 </body>
 </html>
